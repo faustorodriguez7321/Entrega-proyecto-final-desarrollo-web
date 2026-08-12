@@ -1,0 +1,233 @@
+/*Config general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*=== HEADER / NAVBAR (Bootstrap) ===*/
+.navbar-custom{
+    background-color: black;
+    font-family: "Orbitron", sans-serif;
+    padding: 15px 20px;
+}
+
+.navbar-custom .navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 32px;
+}
+
+.navbar-custom .navbar-brand img{
+    width: 45px;
+    height: auto;
+}
+
+.title{
+    color: #39FF14;
+}
+
+.navbar-custom .nav-link{
+    color: #39FF14 !important;
+    font-family: "Orbitron", sans-serif;
+    font-size: 18px;
+}
+
+.navbar-custom .nav-link.active{
+    text-decoration: underline;
+}
+
+/*=== MAIN ===*/
+
+main{
+    background-color: #111111;
+    flex: 1;
+}
+
+.secindex{
+    margin-top: 0%;
+}
+
+.banner{
+width: 100%;
+height: auto;
+display: block;
+}
+
+main section{
+    margin-top: 25px;
+}
+
+main section div{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.producto{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/*=== GRID de productos (mouses.html) ===*/
+.grid-productos{
+    display: grid;
+    grid-template-areas:
+        "producto1"
+        "producto2";
+    gap: 30px;
+    padding: 20px;
+}
+
+.grid-productos > div:nth-child(1){
+    grid-area: producto1;
+}
+
+.grid-productos > div:nth-child(2){
+    grid-area: producto2;
+}
+
+@media (min-width: 1024px){
+    .grid-productos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "producto1 producto2";
+    }
+}
+
+main h2{
+    color: #39FF14;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Orbitron", sans-serif;
+}
+
+main section div figure img{
+    border-radius: 15px;
+    
+}
+
+main section figure figcaption{
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    margin-left: 20px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+main section figure p{
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+/*=== CONTACTO ===*/
+
+
+.maincontact{
+    background-color: #111111;
+    color: #39FF14;
+    text-align: center;
+}
+
+.maincontact section iframe{
+    border: 0;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.maincontact form {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.maincontact form fieldset{
+    margin-top: 20px;
+}
+
+.maincontact .form-control{
+    background-color: #1a1a1a;
+    color: #39FF14;
+    border: 1px solid #39FF14;
+}
+
+.maincontact .form-control:focus{
+    background-color: #1a1a1a;
+    color: #39FF14;
+    border-color: #39FF14;
+    box-shadow: none;
+}
+
+.maincontact .form-control::placeholder{
+    color: #777777;
+}
+
+.maincontact .btn-neon{
+    background-color: #39FF14;
+    color: black;
+    font-family: "Orbitron", sans-serif;
+    border: none;
+}
+
+.h2contact{
+    color: #39FF14;
+    font-size: 28px;
+    font-family: "Orbitron", sans-serif;
+    margin-bottom: 20px;
+}
+
+
+
+/*=== FOOTER ===*/
+footer{
+    background-color: #CCCCCC; /* o #222222 */
+    margin-top: 0.1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+footer h2{
+    color: gray;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+}
+
+footer div ul{
+    color: gray;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer div ul li a{
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+}
+
+footer div p{
+    color: #808080;
+    font-family: "Roboto", sans-serif;
+    font-size:10px;
+}
+

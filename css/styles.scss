@@ -1,0 +1,246 @@
+// ==== VARIABLES ====
+$color-neon: #39FF14;
+$color-bg-dark: #111111;
+$color-bg-black: black;
+$color-bg-input: #1a1a1a;
+$color-placeholder: #777777;
+$color-footer-bg: #CCCCCC; // o #222222
+$color-gray: gray;
+$color-gray-text: #808080;
+$color-gray-link: rgb(128, 128, 128);
+$color-white: rgb(255, 255, 255);
+
+$font-heading: "Orbitron", sans-serif;
+$font-body: "Roboto", sans-serif;
+
+/*Config general*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*=== HEADER / NAVBAR (Bootstrap) ===*/
+.navbar-custom {
+    background-color: $color-bg-black;
+    font-family: $font-heading;
+    padding: 15px 20px;
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: white;
+        font-size: 32px;
+
+        img {
+            width: 45px;
+            height: auto;
+        }
+    }
+
+    .nav-link {
+        color: $color-neon !important;
+        font-family: $font-heading;
+        font-size: 18px;
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}
+
+.title {
+    color: $color-neon;
+}
+
+/*=== MAIN ===*/
+main {
+    background-color: $color-bg-dark;
+    flex: 1;
+
+    section {
+        margin-top: 25px;
+
+        div {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            margin: 0 auto;
+
+            figure {
+                img {
+                    border-radius: 15px;
+                }
+
+                figcaption {
+                    color: $color-white;
+                    font-family: $font-body;
+                    margin-left: 20px;
+                    overflow-wrap: break-word;
+                    word-break: break-word;
+                }
+
+                p {
+                    color: $color-white;
+                    font-family: $font-body;
+                    font-size: 20px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    h2 {
+        color: $color-neon;
+        text-align: center;
+        font-size: 28px;
+        font-family: $font-heading;
+    }
+}
+
+.secindex {
+    margin-top: 0%;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.producto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/*=== GRID de productos (mouses.html) ===*/
+.grid-productos {
+    display: grid;
+    grid-template-areas:
+        "producto1"
+        "producto2";
+    gap: 30px;
+    padding: 20px;
+
+    > div {
+        &:nth-child(1) {
+            grid-area: producto1;
+        }
+
+        &:nth-child(2) {
+            grid-area: producto2;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "producto1 producto2";
+    }
+}
+
+/*=== CONTACTO ===*/
+.maincontact {
+    background-color: $color-bg-dark;
+    color: $color-neon;
+    text-align: center;
+
+    section iframe {
+        border: 0;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    form {
+        display: block;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        align-items: center;
+
+        fieldset {
+            margin-top: 20px;
+        }
+    }
+
+    .form-control {
+        background-color: $color-bg-input;
+        color: $color-neon;
+        border: 1px solid $color-neon;
+
+        &:focus {
+            background-color: $color-bg-input;
+            color: $color-neon;
+            border-color: $color-neon;
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color: $color-placeholder;
+        }
+    }
+
+    .btn-neon {
+        background-color: $color-neon;
+        color: black;
+        font-family: $font-heading;
+        border: none;
+    }
+}
+
+.h2contact {
+    color: $color-neon;
+    font-size: 28px;
+    font-family: $font-heading;
+    margin-bottom: 20px;
+}
+
+/*=== FOOTER ===*/
+footer {
+    background-color: $color-footer-bg;
+    margin-top: 0.1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+    h2 {
+        color: $color-gray;
+        font-family: $font-heading;
+        font-size: 20px;
+    }
+
+    div {
+        ul {
+            color: $color-gray;
+            list-style-type: disc;
+            padding-left: 20px;
+
+            li a {
+                color: $color-gray-link;
+                text-decoration: none;
+                font-family: $font-heading;
+                font-size: 15px;
+            }
+        }
+
+        p {
+            color: $color-gray-text;
+            font-family: $font-body;
+            font-size: 10px;
+        }
+    }
+}
