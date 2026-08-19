@@ -1,0 +1,35 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+
+// ==== FOOTER ====
+
+footer {
+    background-color: $color-footer-bg;
+    margin-top: 0.1%;
+    padding: 20px;
+
+    @include flex($justify: space-between, $align: center, $gap: 20px);
+
+    h2 {
+        @include heading-font(20px, $color-gray);
+    }
+
+    div {
+        ul {
+            color: $color-gray;
+            list-style-type: disc;
+            padding-left: 20px;
+
+            li a {
+                color: $color-gray-link;
+                text-decoration: none;
+
+                @include heading-font(15px);
+            }
+        }
+
+        p {
+            @include body-font(10px, $color-gray-text);
+        }
+    }
+}

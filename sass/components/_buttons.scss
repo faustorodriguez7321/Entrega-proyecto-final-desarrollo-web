@@ -1,0 +1,12 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+
+// ==== BOTONES ====
+
+.btn-neon {
+    background-color: $color-neon;
+    color: black;
+    border: none;
+
+    @include heading-font;
+}

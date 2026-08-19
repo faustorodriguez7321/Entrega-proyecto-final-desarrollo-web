@@ -1,0 +1,49 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/variables' as *;
+
+// ==== MAIN ====
+
+main {
+    background-color: $color-bg-dark;
+    flex: 1;
+
+    section {
+        margin-top: 25px;
+    }
+
+    h2 {
+        text-align: center;
+
+        @include heading-font(28px, $color-neon);
+    }
+}
+
+.secindex {
+    margin-top: 0%;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+// ==== CONTACTO ====
+
+.maincontact {
+    background-color: $color-bg-dark;
+    color: $color-neon;
+    text-align: center;
+
+    section iframe {
+        border: 0;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+.h2contact {
+    margin-bottom: 20px;
+
+    @include heading-font(28px, $color-neon);
+}
