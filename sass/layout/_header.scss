@@ -4,8 +4,9 @@
 // ==== HEADER / NAVBAR ====
 
 .navbar-custom {
-    background-color: $color-bg-black;
+    background: linear-gradient(to bottom, $color-bg-black, $color-bg-dark);
     padding: 15px 20px;
+    
 
     @include heading-font;
 
