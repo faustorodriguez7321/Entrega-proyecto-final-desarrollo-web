@@ -5,7 +5,7 @@
 
 .navbar-custom {
     background: linear-gradient(to bottom, $color-bg-black, $color-bg-dark);
-    padding: 15px 20px;
+    padding: 0.9rem 1.25rem;
     
 
     @include heading-font;
@@ -13,17 +13,28 @@
     .navbar-brand {
         color: white;
 
-        @include flex($align: center, $gap: 15px);
-        @include heading-font(32px);
+        @include flex($align: center, $gap: 0.9rem);
+        @include heading-font(2rem);
 
         img {
-            width: 45px;
+            width: 2.8rem;
             height: auto;
+            @include transition;
+        }
+
+        &:hover img {
+            transform: rotate(-8deg) scale(1.08);
         }
     }
 
     .nav-link {
-        @include heading-font(18px, $color-neon);
+        @include heading-font(1.1rem, $color-neon);
+        @include transition;
+
+        &:hover {
+            opacity: 0.75;
+            transform: translateY(-2px);
+        }
 
         &.active {
             text-decoration: underline;

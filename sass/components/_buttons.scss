@@ -9,4 +9,11 @@
     border: none;
 
     @include heading-font;
+    @include transition;
+
+    &:hover {
+        background-color: lighten($color-neon, 10%);
+        transform: translateY(-2px);
+        animation: neonPulse 1.4s ease-in-out infinite;
+    }
 }

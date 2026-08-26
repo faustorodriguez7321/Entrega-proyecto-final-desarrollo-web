@@ -2,14 +2,14 @@
 
 
 @mixin heading-font($size: inherit, $color: inherit) {
-    font-family: v.$font-heading;
+    font-family: $font-heading;
     font-size: $size;
     color: $color;
 }
 
 
 @mixin body-font($size: inherit, $color: inherit) {
-    font-family: v.$font-body;
+    font-family: $font-body;
     font-size: $size;
     color: $color;
 }
@@ -31,11 +31,16 @@
 }
 
 
-@mixin neon-focus($color: v.$color-neon, $bg: v.$color-bg-input) {
+@mixin neon-focus($color: $color-neon, $bg: $color-bg-input) {
     &:focus {
         background-color: $bg;
         color: $color;
         border-color: $color;
         box-shadow: none;
     }
+}
+
+
+@mixin transition($props: all, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $props $duration $ease;
 }

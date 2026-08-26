@@ -6,30 +6,30 @@
 footer {
     background-color: $color-footer-bg;
     margin-top: 0.1%;
-    padding: 20px;
+    padding: 1.25rem;
 
-    @include flex($justify: space-between, $align: center, $gap: 20px);
+    @include flex($justify: space-between, $align: center, $gap: 1.25rem);
 
     h2 {
-        @include heading-font(20px, $color-gray);
+        @include heading-font(1.25rem, $color-gray);
     }
 
     div {
         ul {
             color: $color-gray;
             list-style-type: disc;
-            padding-left: 20px;
+            padding-left: 1.25rem;
 
             li a {
                 color: $color-gray-link;
                 text-decoration: none;
 
-                @include heading-font(15px);
+                @include heading-font(0.9rem);
             }
         }
 
         p {
-            @include body-font(10px, $color-gray-text);
+            @include body-font(0.6rem, $color-gray-text);
         }
     }
 }

@@ -2,7 +2,7 @@
 
 Proyecto final del curso de **Desarrollo Web**: un sitio estático de e-commerce (front-end) para una tienda de hardware gamer ficticia llamada **Timbó Hardware**.
 
-🔗 **Demo en vivo:** [faustorodriguez7321.github.io/Entrega-proyecto-final-desarrollo-web](https://faustorodriguez7321.github.io/Entrega-proyecto-final-desarrollo-web/)
+🔗 **Demo en vivo:** _(actualizar con la URL que te da Vercel o Netlify al desplegar, ver sección "Deploy" más abajo)_
 
 ---
 
@@ -22,7 +22,11 @@ El proyecto está armado como una serie de páginas HTML estáticas que comparte
 - **Google Fonts** — Tipografías `Orbitron` (títulos, estética futurista) y `Roboto` / `Exo 2` (texto general).
 - **Google Maps Embed** — `<iframe>` con la ubicación en la página de contacto.
 
-No hay backend ni base de datos: es un sitio 100% estático, pensado para desplegarse en **GitHub Pages**.
+No hay backend ni base de datos: es un sitio 100% estático, desplegado en **Vercel** (o Netlify).
+
+---
+LINK DE VERCEL
+https://vercel.com/timbo-hardware/entrega-proyecto-final-desarrollo-web
 
 ---
 

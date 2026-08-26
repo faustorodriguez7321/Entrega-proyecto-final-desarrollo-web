@@ -8,13 +8,13 @@ main {
     flex: 1;
 
     section {
-        margin-top: 25px;
+        margin-top: 1.56rem;
     }
 
     h2 {
         text-align: center;
 
-        @include heading-font(28px, $color-neon);
+        @include heading-font(1.75rem, $color-neon);
     }
 }
 
@@ -26,6 +26,7 @@ main {
     width: 100%;
     height: auto;
     display: block;
+    animation: fadeIn 0.8s ease-out;
 }
 
 // ==== CONTACTO ====
@@ -37,13 +38,18 @@ main {
 
     section iframe {
         border: 0;
+        display: block;
+        width: 100%;
+        max-width: 800px;
+        aspect-ratio: 16 / 9;
+        height: auto;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 1.8rem;
     }
 }
 
 .h2contact {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
-    @include heading-font(28px, $color-neon);
+    @include heading-font(1.75rem, $color-neon);
 }

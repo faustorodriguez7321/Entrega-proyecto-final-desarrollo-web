@@ -5,21 +5,27 @@
 
 .producto {
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem;
     height: auto;
+    @include transition;
+
+    &:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 0.9rem rgba($color-neon, 0.5);
+    }
 }
 
 main section div {
-    @include contained(400px);
-    padding: 20px;
+    @include contained(25rem);
+    padding: 1.25rem;
 
     figure {
         img {
-            border-radius: 15px;
+            border-radius: 0.9rem;
         }
 
         figcaption {
-            margin-left: 20px;
+            margin-left: 1.25rem;
             overflow-wrap: break-word;
             word-break: break-word;
 
@@ -27,9 +33,9 @@ main section div {
         }
 
         p {
-            margin-left: 20px;
+            margin-left: 1.25rem;
 
-            @include body-font(20px, $color-white);
+            @include body-font(1.25rem, $color-white);
         }
     }
 }
@@ -40,8 +46,8 @@ main section div {
     grid-template-areas:
         "producto1"
         "producto2";
-    gap: 30px;
-    padding: 20px;
+    gap: 1.8rem;
+    padding: 1.25rem;
 
     > div {
         &:nth-child(1) {
