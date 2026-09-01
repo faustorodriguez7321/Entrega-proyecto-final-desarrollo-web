@@ -26,7 +26,7 @@ No hay backend ni base de datos: es un sitio 100% estático, desplegado en **Ver
 
 ---
 LINK DE VERCEL
-https://vercel.com/timbo-hardware/entrega-proyecto-final-desarrollo-web
+entrega-proyecto-final-desarrollo-w.vercel.app
 
 ---
 
