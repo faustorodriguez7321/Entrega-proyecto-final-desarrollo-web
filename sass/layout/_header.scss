@@ -2,46 +2,88 @@
 @use '../utilities/variables' as *;
 
 // ==== HEADER / NAVBAR ====
-
-.navbar-custom {
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background: linear-gradient(to bottom, $color-bg-black, $color-bg-dark);
-    padding: 0.9rem 1.25rem;
-    
+    .navbar-custom {
+        background: linear-gradient(to bottom, $color-bg-black, $color-bg-dark);
+        padding: 0.9rem 1.25rem;
 
-    @include heading-font;
 
-    .navbar-brand {
-        color: white;
 
-        @include flex($align: center, $gap: 0.9rem);
-        @include heading-font(2rem);
+        @include heading-font;
 
-        img {
-            width: 2.8rem;
-            height: auto;
+        .navbar-brand {
+            color: white;
+
+            @include flex($align: center, $gap: 0.9rem);
+            @include heading-font(2rem);
+
+            img {
+                width: 2.8rem;
+                height: auto;
+                @include transition;
+            }
+
+            &:hover img {
+                transform: rotate(-8deg) scale(1.08);
+            }
+        }
+
+        .nav-link {
+            @include heading-font(1.1rem, $color-neon);
             @include transition;
-        }
 
-        &:hover img {
-            transform: rotate(-8deg) scale(1.08);
+            &:hover {
+                opacity: 0.75;
+                transform: translateY(-2px);
+            }
+
+            &.active {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .title {
+        color: $color-neon;
+    }
+
+    @media (min-width: 768px) {
+        .navbar-custom {
+            padding: 1.1rem 2rem;
+
+            .navbar-brand {
+                @include heading-font(2.3rem);
+
+                img {
+                    width: 3.2rem;
+                }
+            }
+
+            .nav-link {
+                font-size: 1.2rem;
+            }
         }
     }
 
-    .nav-link {
-        @include heading-font(1.1rem, $color-neon);
-        @include transition;
+    @media (min-width: 1024px) {
+        .navbar-custom {
+            padding: 1.25rem 2.5rem;
 
-        &:hover {
-            opacity: 0.75;
-            transform: translateY(-2px);
-        }
+            .navbar-brand {
+                @include heading-font(2.6rem);
 
-        &.active {
-            text-decoration: underline;
+                img {
+                    width: 3.5rem;
+                }
+            }
+
+            .nav-link {
+                font-size: 1.3rem;
+            }
         }
     }
-}
-
-.title {
-    color: $color-neon;
 }

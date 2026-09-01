@@ -11,10 +11,31 @@ main {
         margin-top: 1.56rem;
     }
 
-    h2 {
+
+    h1 {
         text-align: center;
 
         @include heading-font(1.75rem, $color-neon);
+    }
+
+    @media (min-width: 768px) {
+        section {
+            margin-top: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        section {
+            margin-top: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+        }
     }
 }
 
@@ -45,6 +66,10 @@ main {
         height: auto;
         margin: 0 auto;
         margin-top: 1.8rem;
+
+        @media (min-width: 768px) {
+            margin-top: 2.2rem;
+        }
     }
 }
 
@@ -52,4 +77,12 @@ main {
     margin-bottom: 1.25rem;
 
     @include heading-font(1.75rem, $color-neon);
+
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 2.25rem;
+    }
 }

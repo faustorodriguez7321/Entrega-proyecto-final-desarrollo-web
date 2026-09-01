@@ -13,11 +13,20 @@
         transform: scale(1.04);
         box-shadow: 0 0 0.9rem rgba($color-neon, 0.5);
     }
+
+    @media (min-width: 768px) {
+        max-width: 28rem;
+    }
 }
 
 main section div {
     @include contained(25rem);
     padding: 1.25rem;
+
+    @media (min-width: 768px) {
+        max-width: 28rem;
+        padding: 1.5rem;
+    }
 
     figure {
         img {
@@ -59,8 +68,13 @@ main section div {
         }
     }
 
+    @media (min-width: 768px) {
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
     @media (min-width: 1024px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "producto1 producto2";
     }
 }
