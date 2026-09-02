@@ -41,7 +41,7 @@ header {
 }
 header .navbar-custom {
   background: linear-gradient(to bottom, #000000, #111111);
-  padding: 0.9rem 0.5rem;
+  padding: 0.9rem 0.3rem;
   font-family: "Orbitron", sans-serif;
   font-size: inherit;
   color: inherit;
@@ -146,6 +146,23 @@ main h1 {
 
 .secindex {
   margin-top: 0%;
+  min-height: 100vh;
+  background-image: url(../img/opcion_1_timbo_mobile.jpg);
+  background-size: cover;
+  background-position: center 95%;
+  background-repeat: no-repeat;
+  animation: fadeIn 0.8s ease-out;
+}
+@media (min-width: 768px) {
+  .secindex {
+    background-image: url(../img/opcion_1_timbo_tablet.jpg);
+  }
+}
+@media (min-width: 1024px) {
+  .secindex {
+    background-image: url(../img/opcion2_timbohardware.jpg);
+    background-position: center 80%;
+  }
 }
 
 .banner {
