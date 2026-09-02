@@ -7,9 +7,10 @@ header {
     top: 0;
     z-index: 1000;
     background: linear-gradient(to bottom, $color-bg-black, $color-bg-dark);
+
     .navbar-custom {
         background: linear-gradient(to bottom, $color-bg-black, $color-bg-dark);
-        padding: 0.9rem 1.25rem;
+        padding: 0.9rem 0.50rem
 
 
 

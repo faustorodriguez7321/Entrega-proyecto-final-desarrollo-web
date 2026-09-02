@@ -318,22 +318,23 @@ footer div p {
   }
 }
 
-main section div {
+.grid-productos > div {
   width: 100%;
   max-width: 25rem;
   margin: 0 auto;
   padding: 1.25rem;
 }
 @media (min-width: 768px) {
-  main section div {
+  .grid-productos > div {
     max-width: 28rem;
     padding: 1.5rem;
   }
 }
-main section div figure img {
+
+main figure img {
   border-radius: 0.9rem;
 }
-main section div figure figcaption {
+main figure figcaption {
   margin-left: 1.25rem;
   overflow-wrap: break-word;
   word-break: break-word;
@@ -341,7 +342,7 @@ main section div figure figcaption {
   font-size: inherit;
   color: rgb(255, 255, 255);
 }
-main section div figure p {
+main figure p {
   margin-left: 1.25rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;

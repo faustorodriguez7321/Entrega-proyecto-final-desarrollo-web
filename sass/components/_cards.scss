@@ -19,7 +19,7 @@
     }
 }
 
-main section div {
+.grid-productos > div {
     @include contained(25rem);
     padding: 1.25rem;
 
@@ -27,25 +27,25 @@ main section div {
         max-width: 28rem;
         padding: 1.5rem;
     }
+}
 
-    figure {
-        img {
-            border-radius: 0.9rem;
-        }
+main figure {
+    img {
+        border-radius: 0.9rem;
+    }
 
-        figcaption {
-            margin-left: 1.25rem;
-            overflow-wrap: break-word;
-            word-break: break-word;
+    figcaption {
+        margin-left: 1.25rem;
+        overflow-wrap: break-word;
+        word-break: break-word;
 
-            @include body-font($color: $color-white);
-        }
+        @include body-font($color: $color-white);
+    }
 
-        p {
-            margin-left: 1.25rem;
+    p {
+        margin-left: 1.25rem;
 
-            @include body-font(1.25rem, $color-white);
-        }
+        @include body-font(1.25rem, $color-white);
     }
 }
 
