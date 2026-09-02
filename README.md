@@ -2,8 +2,7 @@
 
 Proyecto final del curso de **Desarrollo Web**: un sitio estático de e-commerce (front-end) para una tienda de hardware gamer ficticia llamada **Timbó Hardware**.
 
-🔗 **Demo en vivo:** _(actualizar con la URL que te da Vercel o Netlify al desplegar, ver sección "Deploy" más abajo)_
-
+🔗 **Demo en vivo:** entrega-proyecto-final-desarrollo-w.vercel.app
 ---
 
 ## 📋 Descripción
@@ -23,10 +22,6 @@ El proyecto está armado como una serie de páginas HTML estáticas que comparte
 - **Google Maps Embed** — `<iframe>` con la ubicación en la página de contacto.
 
 No hay backend ni base de datos: es un sitio 100% estático, desplegado en **Vercel** (o Netlify).
-
----
-LINK DE VERCEL
-entrega-proyecto-final-desarrollo-w.vercel.app
 
 ---
 
